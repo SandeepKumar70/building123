@@ -56,9 +56,9 @@ body {
     background-position: center;
 }
 
-.slide.active {
+/* .slide.active {
     opacity: 10;
-}
+} */
 
 /* In your case, use your actual image paths */
 .slide:nth-child(1) {
