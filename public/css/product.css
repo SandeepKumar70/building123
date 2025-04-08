@@ -1,16 +1,21 @@
 .Go-to-website {
     width: 100px;
     height: 30px;
-     margin-left: 40px;
-    margin-top: 10px; 
+     margin-left: 8px;
+    /* margin-top: 10px;  */
      /* display: flex;  */
      justify-content: center; 
     align-items: center;
     border-radius: 15px; /* Rounds the corners */
-    background-color: #2f49b9; /* Example background color */
+    background-color: #f8cb00; /* Example background color */
     color: rgb(240, 240, 240); /* Text color */
     font-size: 15px; /* Adjust the font size */
     /* text-align: center; */
     border: none; /* Optional, remove border if not needed */
 }
+
+/* video */
+
+
+
 
