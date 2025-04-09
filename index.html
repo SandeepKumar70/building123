@@ -223,7 +223,6 @@
             font-size: 16px;
             font-weight: 560;
             color: black;
-            /* margin-bottom: 10px; */
         }
 
         .title3 {
@@ -270,7 +269,11 @@
             flex-wrap: wrap;
             gap: 15px;
         }
-
+   .maps-main {
+       display: flex;
+         gap: 40px;
+         margin-left: 30px;
+   }
         .sidebar-social-icon {
             display: flex;
             align-items: center;
@@ -304,7 +307,7 @@
 
         /* Map Container */
         .map-container {
-            width: 90%;
+            width: 110%;
             height: 500px;
             margin: 40px auto;
             border-radius: 8px;
@@ -502,6 +505,10 @@
         transform: scale(1.05);
     }
 
+    .location-container{
+        height: 20px;
+        width: 30px;
+    }
     /* Map container styling */
     .map-container {
         width: 100%;
@@ -516,7 +523,28 @@
         height: 100%;
         border: 0;
     }
-
+.location34 {
+    margin-left: 40px;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+.address {
+    margin-left: 20px;
+}
+.button50 {
+    margin-left:  80px;
+    height: 40px;
+    width: 150px;
+    background: linear-gradient(to right, #edba12, #ca8a04);
+   border: none;
+   border-radius: 10px;
+   color: white;
+}
+.View-Location {
+    margin-top: 30px;
+    color: white;
+}
     /* Responsive adjustments */
     @media (max-width: 768px) {
         .top-images {
@@ -768,6 +796,71 @@
 
 
 
+/* Media queries for responsiveness */
+@media (max-width: 992px) {
+    .maps-main {
+        gap: 20px;
+    }
+    
+    .map-container {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .maps-main {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: 30px 15px;
+    }
+    
+    .location-container {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .location34 {
+        margin-left: 0;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+    
+    .address {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .View-Location {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .map-container {
+        width: 100%;
+        height: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .maps-main {
+        margin: 20px 10px;
+    }
+    
+    .map-container {
+        height: 300px;
+    }
+    
+    h1[style="margin-left: 100px; color: #a92b2b;"] {
+        margin-left: 0 !important;
+        text-align: center;
+    }
+}
+
+
 
         @media (max-width: 480px) {
             .container {
@@ -942,10 +1035,35 @@
        
         
         <!-- Map container -->
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d112084.68165474615!2d77.14816331678553!3d28.61038584545171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x390d1d837cbc445f%3A0x3b12f7855cfd686c!2sRing%20Rd%2C%20Bhikaji%20Cama%20Place%2C%20Rama%20Krishna%20Puram%2C%20New%20Delhi%2C%20Delhi%20110066!3m2!1d28.569412099999997!2d77.1849028!5e0!3m2!1sen!2sin!4v1744184759511!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          
-        </div>
+         <div class="maps-main">
+            <div class="location-containe">
+                <h1 style="margin-left: 100px; color: #a92b2b;">Venue</h1>
+                <!-- Add image -->
+                 <div >
+                    <img class="location34" src="/public/product/sidebar/tajhotedelhi.avif" alt="Location Image">
+
+                 </div>
+                
+                <!-- Add address -->
+                <div class="address">
+                    <h2>Hyatt Regency Delhi</h2>
+                    <p>Ring Rd, Bhikaji Cama Place, Rama Krishna Puram, <br> New Delhi, Delhi 110066</p> 
+                </div>
+                
+                <!-- Add button with redirect to location -->
+                 <div class="View-Location">
+                <button class="button50" onclick="window.open('https://www.google.com/maps?q=Hyatt+Regency+Delhi+Ring+Rd+Bhikaji+Cama+Place', '_blank');">
+                   Get Directions
+                </button>
+            </div>
+            </div>
+
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d112084.68165474615!2d77.14816331678553!3d28.61038584545171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x390d1d837cbc445f%3A0x3b12f7855cfd686c!2sRing%20Rd%2C%20Bhikaji%20Cama%20Place%2C%20Rama%20Krishna%20Puram%2C%20New%20Delhi%2C%20Delhi%20110066!3m2!1d28.569412099999997!2d77.1849028!5e0!3m2!1sen!2sin!4v1744184759511!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              
+            </div>
+         </div>
+       
     .
 
     <!-- Footer -->
