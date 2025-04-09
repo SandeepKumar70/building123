@@ -931,6 +931,387 @@
                 height: 200px;
             }
         }
+
+
+/* ===== MOBILE RESPONSIVE FIXES ===== */
+
+/* Base Mobile Adjustments */
+@media (max-width: 992px) {
+    /* Page Layout */
+    .page-content {
+        flex-direction: column;
+        padding: 0 15px;
+    }
+    
+    /* Sidebar Adjustments */
+    .sidebar {
+        margin-left: 0;
+        margin-top: 30px;
+        width: 100%;
+        padding: 20px 15px;
+    }
+    
+    /* Footer Structure */
+    .footer-logo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-container3 {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    
+    .footer-section4 {
+        margin-right: 0;
+    }
+    
+    /* Maps Section */
+    .maps-main {
+        gap: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    .map-container {
+        height: 400px;
+    }
+    
+    /* Sidebar Elements */
+    .weights-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .sidebar-video {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto 15px;
+    }
+    
+    .Go-to-website {
+        margin: 10px auto;
+        display: inline-flex;
+    }
+}
+
+/* Tablet Adjustments */
+@media (max-width: 768px) {
+    /* Hero Section */
+    .container {
+        height: 60vh;
+    }
+    
+    .slider, .slide {
+        height: 100%;
+    }
+    
+    header {
+        padding: 15px;
+    }
+    
+    .logo {
+        font-size: 24px;
+    }
+    
+    .content3 {
+        height: auto;
+        min-height: 40vh;
+        padding: 20px 15px;
+    }
+    
+    .content3 h1 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    
+    .separator {
+        width: 50px;
+        margin: 10px auto;
+    }
+    
+    /* Info Boxes */
+    .info-box {
+        margin-bottom: 25px;
+    }
+    
+    .imag {
+        height: auto;
+    }
+    
+    .mai {
+        padding: 15px;
+    }
+    
+    .heading2 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    
+    .title3 {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    
+    /* Maps Section */
+    .maps-main {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin: 30px 15px;
+    }
+    
+    .location-container {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .venue-title {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .image-container {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    
+    .location34 {
+        margin: 0 auto;
+        height: auto;
+        max-height: 280px;
+        width: 90%;
+        max-width: 300px;
+        border-radius: 10px;
+    }
+    
+    .address {
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+        padding: 0 15px;
+    }
+    
+    .View-Location {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .button50 {
+        margin: 10px auto;
+        display: block;
+    }
+    
+    .map-containe iframe {
+        width: 100%;
+        height: 350px;
+    }
+    
+    .map-container {
+        width: 100%;
+        height: 350px;
+    }
+    
+    /* Footer */
+    .footer-container7 {
+        width: 100%;
+        padding: 0 15px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-section {
+        margin-right: 0;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .footer-section .smartex {
+        width: 160px;
+        margin: 0 auto 15px;
+    }
+    
+    .newsletter1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .newsletter1 .Go-to-website {
+        position: static;
+        margin: 10px auto;
+    }
+    
+    .footer-container3 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .social-icons3 {
+        justify-content: center;
+        margin: 15px 0;
+    }
+    
+    .social-icons3 a {
+        width: 45px;
+        height: 45px;
+    }
+    
+    /* Newsletter */
+    .newsletter input, .newsletter button {
+        width: 100%;
+    }
+    
+    /* Social Icons */
+    .social-icons, .sidebar-social-icons {
+        justify-content: center;
+    }
+    
+    .sidebar-social-icons {
+        gap: 12px;
+    }
+    
+    .sidebar-social-icon {
+        width: 35px;
+        height: 35px;
+    }
+    
+    /* Contact Items */
+    .contact-item {
+        justify-content: center;
+    }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 480px) {
+    /* Base Text */
+    body {
+        font-size: 15px;
+    }
+    
+    /* Hero Section */
+    .container {
+        height: 50vh;
+    }
+    
+    .logo {
+        font-size: 20px;
+    }
+    
+    .content3 h1 {
+        font-size: 18px;
+    }
+    
+    /* Info Boxes */
+    .heading2 {
+        font-size: 17px;
+    }
+    
+    .title3 {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    
+    /* Maps Section */
+    .maps-main {
+        margin: 20px 10px;
+    }
+    
+    .image-container {
+        max-width: 250px;
+    }
+    
+    .location34 {
+        max-height: 250px;
+    }
+    
+    .map-container {
+        height: 300px;
+    }
+    
+    .address h2 {
+        font-size: 18px;
+    }
+    
+    .address p {
+        font-size: 14px;
+    }
+    
+    /* Buttons */
+    .button50 {
+        height: 38px;
+        width: 140px;
+    }
+    
+    .Go-to-website {
+        width: 120px;
+        height: 36px;
+        font-size: 14px;
+        padding: 0 8px;
+    }
+    
+    /* Sidebar */
+    .sidebar-video {
+        max-height: 180px;
+    }
+    
+    /* Footer */
+    .footer-section .smartex {
+        width: 140px;
+    }
+    
+    .footer-section4 h3 {
+        font-size: 1.4rem;
+    }
+    
+    .contact-item {
+        font-size: 14px;
+    }
+}
+
+/* Small Mobile Adjustments */
+@media (max-width: 360px) {
+    /* Hero Section */
+    .container {
+        height: 45vh;
+    }
+    
+    .content3 h1 {
+        font-size: 16px;
+    }
+    
+    /* Info Boxes */
+    .heading2 {
+        font-size: 16px;
+    }
+    
+    /* Maps Section */
+    .map-containe iframe {
+        height: 280px;
+    }
+    
+    /* Contact */
+    .contact-item {
+        font-size: 13px;
+    }
+    
+    /* Footer */
+    .footer-bottom5 p {
+        font-size: 14px;
+    }
+}
+
+
     </style>
 </head>
 <body>
