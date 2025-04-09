@@ -13,6 +13,13 @@
             font-family: 'Helvetica Neue', Arial, sans-serif;
         }
 
+        .smartex {
+    width: 200px;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
         body {
             color: #333;
             font-size: 16px;
@@ -323,14 +330,26 @@
         .footer-logo .logo {
             max-width: 200px;
         }
-
+        .footer-container7 {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    /* margin-left: 20px; */
+    margin-top: -40px;
+}
         .footer-container3 {
             display: flex;
             justify-content: space-between;
             gap: 20px;
             margin-left: 20px;
         }
-
+.footer-section{
+    /* justify-content: center; */
+            /* flex: 1; */
+            margin-right: 150px;
+            font-size: 2.9rem;
+            /* margin-bottom: 1.8rem; */
+}
         .footer-section4 {
             justify-content: center;
             flex: 1;
@@ -364,7 +383,13 @@
         .social-icons3 a:hover {
             transform: translateY(-5px);
         }
+.newsletter1 {
+    display: flex;
+            flex-wrap: wrap;
+            /* gap: 10px; */
 
+            /* margin-top: 5px; */
+}
         .newsletter {
             margin-top: 15px;
         }
@@ -373,6 +398,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
+            
         }
 
         .newsletter input {
@@ -394,24 +420,23 @@
         }
 
         .Go-to-website {
-            width: 130px;
-            height: 40px;
-            padding: 8px 15px;
-            margin-top: 15px;
-            display: inline-block;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
-            background: linear-gradient(to right, #edba12, #ca8a04);
-            color: white;
-            font-size: 16px;
-            font-weight: 500;
-            text-align: center;
-            border: none;
-            cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
+    width: 130px;
+    height: 40px;
+    /* padding: 8px 15px; */
+    margin-top: -41px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: linear-gradient(to right, #edba12, #ca8a04);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
         .Go-to-website:hover {
             transform: translateY(-3px);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -556,6 +581,107 @@
             }
         }
 
+
+/* Smartex section in sidebar */
+@media (max-width: 992px) {
+    .weights-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .sidebar-video {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto 15px;
+    }
+    
+    .Go-to-website {
+        margin: 10px auto;
+        display: block;
+    }
+}
+
+/* Smartex section in footer */
+@media (max-width: 768px) {
+    .footer-container7 {
+        width: 100%;
+        padding: 0 15px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-section {
+        margin-right: 0;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .footer-section .smartex {
+        width: 160px;
+        margin: 0 auto 15px;
+    }
+    
+    .newsletter1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .newsletter1 .Go-to-website {
+        position: static;
+        margin: 10px auto;
+    }
+}
+
+/* Smartex elements on very small screens */
+@media (max-width: 480px) {
+    .footer-section .smartex {
+        width: 140px;
+    }
+    
+    .Go-to-website {
+        width: 120px;
+        height: 36px;
+        font-size: 14px;
+        padding: 8px 0;
+    }
+    
+    .sidebar-video {
+        max-height: 180px;
+    }
+}
+
+/* Fix for Smartex "Go to Website" button positioning */
+.newsletter1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.Go-to-website {
+    position: static;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Additional smoothing for transition between screen sizes */
+@media (max-width: 576px) {
+    .weights-section h3,
+    .social-section h3,
+    .contact-info h3 {
+        font-size: 18px;
+    }
+}
+
+
+
+
         @media (max-width: 480px) {
             .container {
                 height: 50vh;
@@ -676,9 +802,12 @@
         <div class="sidebar">
             <div class="weights-section">
                 <h3>About Smartex</h3>
-                <video autoplay muted loop class="sidebar-video">
-                    <source src="/public/product/sidebar/design.mp4" type="video/mp4">
-                </video>             
+                <a href="https://www.smartex.org.in/" target="_blank">
+                    <video autoplay muted loop class="sidebar-video" style="cursor: pointer;">
+                        <source src="/public/product/sidebar/design.mp4" type="video/mp4">
+                     
+                    </video>
+                </a>           
                 <div class="newsletter">
                     <a href="https://www.smartex.org.in/" target="_blank">
                         <button class="Go-to-website">Go to Website</button>
@@ -737,13 +866,20 @@
                         <a href="https://www.youtube.com/@bmreporter" class="youtube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
-                <div class="footer-section4">
-                    <h3>smartex</h3>
-                    <div class="newsletter">
-                        <a href="https://www.smartex.org.in/" target="_blank">
-                            <button class="Go-to-website">Go to Website</button>
-                        </a>
-                    </div>
+                </div>
+                <div class="footer-container7">
+                <div class="footer-section">
+                    <a href="https://www.smartex.org.in/" target="_blank">
+                        <img class="smartex"  src="/public/product/sidebar/smartex-logo.png" alt="Smartex Logo" class="footer-logo" />
+                    </a>
+                    <a class="newsletter1" href="https://www.smartex.org.in/" target="_blank">
+                        <button class="Go-to-website">Go to Website</button>
+                    </a>
+               
+                    <!-- <div class="newsletter1">
+                       
+                    </div> -->
+                    
                 </div>
             </div>
         </div>
