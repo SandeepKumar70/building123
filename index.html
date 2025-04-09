@@ -14,12 +14,12 @@
         }
 
         .smartex {
-    width: 200px;
-    height: auto;
-    max-height: 200px;
-    object-fit: contain;
-    margin-bottom: 15px;
-}
+            width: 200px;
+            height: auto;
+            max-height: 200px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
         body {
             color: #333;
             font-size: 16px;
@@ -331,25 +331,20 @@
             max-width: 200px;
         }
         .footer-container7 {
-    /* display: flex; */
-    flex-direction: column;
-    align-items: center;
-    /* margin-left: 20px; */
-    margin-top: -40px;
-}
+            flex-direction: column;
+            align-items: center;
+            margin-top: -40px;
+        }
         .footer-container3 {
             display: flex;
             justify-content: space-between;
             gap: 20px;
             margin-left: 20px;
         }
-.footer-section{
-    /* justify-content: center; */
-            /* flex: 1; */
+        .footer-section{
             margin-right: 150px;
             font-size: 2.9rem;
-            /* margin-bottom: 1.8rem; */
-}
+        }
         .footer-section4 {
             justify-content: center;
             flex: 1;
@@ -376,6 +371,7 @@
             background: linear-gradient(to right, #edba12, #ca8a04);
             border-radius: 50%;
             color: #fff;
+            border: none;
             text-decoration: none;
             transition: all 0.3s ease;
         }
@@ -383,22 +379,22 @@
         .social-icons3 a:hover {
             transform: translateY(-5px);
         }
-.newsletter1 {
-    display: flex;
-            flex-wrap: wrap;
-            /* gap: 10px; */
-
-            /* margin-top: 5px; */
-}
+        .newsletter1 {
+            display: flex;
+            justify-content: center;
+            margin-top: -43px;
+            cursor: pointer;
+        }
         .newsletter {
             margin-top: 15px;
+            display: flex;
+            justify-content: center;
         }
 
         .newsletter form {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            
         }
 
         .newsletter input {
@@ -419,24 +415,29 @@
             object-fit: cover;
         }
 
+        /* FIXED GO TO WEBSITE BUTTON - Modified to keep text on one line */
         .Go-to-website {
-    width: 130px;
-    height: 40px;
-    /* padding: 8px 15px; */
-    margin-top: -41px;
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    background: linear-gradient(to right, #edba12, #ca8a04);
-    color: white;
-    font-size: 16px;
-    font-weight: 500;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+            width: 130px;
+            height: 40px;
+            margin-top: -41px;
+            display: inline-flex; /* Changed to inline-flex */
+            justify-content: center;
+            align-items: center;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(to right, #edba12, #ca8a04);
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            white-space: nowrap; /* Added to keep text on one line */
+            line-height: 1; /* Added to control text height */
+            padding: 0 10px; /* Added for text padding */
+        }
+        
         .Go-to-website:hover {
             transform: translateY(-3px);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -468,6 +469,75 @@
             text-align: center;
             margin-top: 30px;
         }
+
+
+
+        .left-side-image, 
+    .right-side-image {
+        width: 48%;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .left-side-image img, 
+    .right-side-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .left-side-image:hover img, 
+    .right-side-image:hover img {
+        transform: scale(1.05);
+    }
+
+    /* Map container styling */
+    .map-container {
+        width: 100%;
+        height: 500px;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .map-container iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .top-images {
+            flex-direction: column;
+        }
+
+        .left-side-image, 
+        .right-side-image {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .map-container {
+            height: 400px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .left-side-image, 
+        .right-side-image {
+            height: 150px;
+        }
+
+        .map-container {
+            height: 300px;
+        }
+    }
+
+
 
         /* Responsive Styles */
         @media (max-width: 1200px) {
@@ -599,7 +669,9 @@
     
     .Go-to-website {
         margin: 10px auto;
-        display: block;
+        display: inline-flex; /* Changed to inline-flex */
+        text-decoration: none;
+
     }
 }
 
@@ -634,6 +706,8 @@
     .newsletter1 .Go-to-website {
         position: static;
         margin: 10px auto;
+        text-decoration: none;
+
     }
 }
 
@@ -647,7 +721,10 @@
         width: 120px;
         height: 36px;
         font-size: 14px;
-        padding: 8px 0;
+        padding: 0 8px;
+        text-decoration: none;
+
+
     }
     
     .sidebar-video {
@@ -660,14 +737,16 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    cursor: pointer;
 }
 
 .Go-to-website {
     position: static;
     margin: 10px auto;
-    display: flex;
+    display: inline-flex; /* Changed to inline-flex */
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 
 /* Additional smoothing for transition between screen sizes */
@@ -842,15 +921,23 @@
         </div>
     </div>
 
-    <!-- Map Section -->
-    <div class="map-container">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115132.86107261966!2d85.07300207866123!3d25.608175570492392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f29937c52d4f05%3A0x831a0e05f607b270!2sPatna%2C%20Bihar!5e0!3m2!1sen!2sin!4v1712538064493!5m2!1sen!2sin"
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </div>
+   
+        <!-- Top images container -->
+        <!-- <div class="top-images">
+            <div class="left-side-image">
+                <a href="https://www.example.com/left-link" target="_blank">
+                    <img src="/public/product/sidebar/left-image.png" alt="Left Side Image">
+                </a>
+            </div>
+           
+        </div> -->
+        
+        <!-- Map container -->
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d112084.68165474615!2d77.14816331678553!3d28.61038584545171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x390d1d837cbc445f%3A0x3b12f7855cfd686c!2sRing%20Rd%2C%20Bhikaji%20Cama%20Place%2C%20Rama%20Krishna%20Puram%2C%20New%20Delhi%2C%20Delhi%20110066!3m2!1d28.569412099999997!2d77.1849028!5e0!3m2!1sen!2sin!4v1744184759511!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+        </div>
+    .
 
     <!-- Footer -->
     <footer class="footer2">
@@ -875,11 +962,6 @@
                     <a class="newsletter1" href="https://www.smartex.org.in/" target="_blank">
                         <button class="Go-to-website">Go to Website</button>
                     </a>
-               
-                    <!-- <div class="newsletter1">
-                       
-                    </div> -->
-                    
                 </div>
             </div>
         </div>
