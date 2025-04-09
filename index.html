@@ -806,7 +806,6 @@
         height: 400px;
     }
 }
-
 @media (max-width: 768px) {
     .maps-main {
         flex-direction: column;
@@ -821,16 +820,27 @@
         text-align: center;
     }
     
-    .location34 {
+    .venue-title {
         margin-left: 0;
+        text-align: center;
+    }
+    
+    .image-container {
         width: 100%;
-        max-width: 300px;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    
+    .location34 {
         height: auto;
+        max-height: 280px;
     }
     
     .address {
         margin-left: 0;
         text-align: center;
+        width: 100%;
+        padding: 0 15px;
     }
     
     .View-Location {
@@ -843,7 +853,10 @@
         width: 100%;
         height: 350px;
     }
-  
+    
+    .mobile-break {
+        display: inline;
+    }
 }
 
 @media (max-width: 480px) {
@@ -851,16 +864,26 @@
         margin: 20px 10px;
     }
     
+    .image-container {
+        max-width: 250px;
+    }
+    
+    .location34 {
+        max-height: 250px;
+    }
+    
     .map-container {
         height: 300px;
     }
     
-    h1[style="margin-left: 100px; color: #a92b2b;"] {
-        margin-left: 0 !important;
-        text-align: center;
+    .address h2 {
+        font-size: 18px;
+    }
+    
+    .address p {
+        font-size: 14px;
     }
 }
-
 
 
         @media (max-width: 480px) {
@@ -1055,15 +1078,14 @@
                 
                 <!-- Add button with redirect to location -->
                  <div class="View-Location">
-                <button class="button50" onclick="window.open('https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d115124.0282551384!2d85.0525697816951!3d25.617345099296198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x39ed599f8a682921%3A0xe9b1fff7cd7cae24!2sCity%20Centre%20Mall%2C%20Buddh%20Marg%2C%20opposite%20Lodipur%20Fire%20Station%2C%20Christian%20Colony%2C%20Lodipur%2C%20Patna%2C%20Bihar%20800001!3m2!1d25.617368199999998!2d85.13497129999999!5e0!3m2!1sen!2sin!4v1744196128206!5m2!1sen!2sin', '_blank');">
-                   Get Directions
+                    <button class="button50" onclick="window.open('https://www.google.com/maps?q=Taj+City+Centre+Patna+City+Centre+Mall+Buddh+Marg', '_blank');">
+                        Get Directions
                 </button>
             </div>
             </div>
 
             <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d115124.0282551384!2d85.0525697816951!3d25.617345099296198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x39ed599f8a682921%3A0xe9b1fff7cd7cae24!2sCity%20Centre%20Mall%2C%20Buddh%20Marg%2C%20opposite%20Lodipur%20Fire%20Station%2C%20Christian%20Colony%2C%20Lodipur%2C%20Patna%2C%20Bihar%20800001!3m2!1d25.617368199999998!2d85.13497129999999!5e0!3m2!1sen!2sin!4v1744196128206!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>              
-            </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3597.625188147425!2d85.13239637539557!3d25.617368177442913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed599f8a682921%3A0xe9b1fff7cd7cae24!2sTaj%20City%20Centre%2C%20Patna!5e0!3m2!1sen!2sin!4v1744197443372!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </div>
          </div>
        
     .
